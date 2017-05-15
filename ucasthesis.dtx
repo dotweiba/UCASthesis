@@ -1876,7 +1876,7 @@
 \renewcommand\tableofcontents{%
   \cleardoublepage
   \ucas@chapter*{\contentsname}[\scontentsname]
-  \xiaosi[1.5]\@starttoc{toc}\normalsize}
+  \xiaosi[1.2]\@starttoc{toc}\normalsize}
 \ifucas@arialtoc
   \def\ucas@toc@font{\sffamily}
 \fi
@@ -2457,8 +2457,8 @@
 \def\ucas@listof#1{% #1: float type
   \cleardoublepage
   \@ifstar
-    {\ucas@chapter*[]{\csname list#1name\endcsname}\ucas@starttoc{#1}}
-    {\ucas@chapter*{\csname list#1name\endcsname}\ucas@starttoc{#1}}}
+    {\ucas@chapter*[]{\csname list#1name\endcsname}\xiaosi[1.2]\ucas@starttoc{#1}\normalsize}
+    {\ucas@chapter*{\csname list#1name\endcsname}\xiaosi[1.2]\ucas@starttoc{#1}\normalsize}}
 \renewcommand\listoffigures{\ucas@listof{figure}}
 \renewcommand*\l@figure{\vspace*{1ex}\@dottedtocline{1}{0em}{4em}}
 \renewcommand\listoftables{\ucas@listof{table}}
