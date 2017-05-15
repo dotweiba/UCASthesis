@@ -1649,6 +1649,8 @@
 \captionsetup[sub]{font=ucas,skip=6bp}
 \renewcommand{\thesubfigure}{(\alph{subfigure})}
 \renewcommand{\thesubtable}{(\alph{subtable})}
+\renewcommand\thefigure{\thechapter-\arabic{figure}}
+\renewcommand\thetable{\thechapter-\arabic{table}}
 % \renewcommand{\p@subfigure}{:}
 %    \end{macrocode}
 % 我们采用 \pkg{longtable} 来处理跨页的表格。同样我们需要设置其默认字体为五号。
